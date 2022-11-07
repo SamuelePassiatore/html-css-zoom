@@ -23,7 +23,11 @@
   /* Utils */
   .container {
     max-width: 1200px;
-    margin: 10px auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   header{
@@ -67,20 +71,11 @@
 
   /* Main */
 
-  .row{
-    display: flex;
-    gap: 10px;
-  }
-
-  .column{
-    flex-basis: calc(100% / 7 - 10px);
-    min-height: 80px;
-  }
-
   .card{
     position: relative;
-    flex-wrap: wrap;
-
+    padding: 5px;
+    min-width: calc(100% / 5 - 10px);
+    min-height: 80px;
   }
 
   .card > img{
@@ -93,8 +88,8 @@
     padding: 2px;
     color: var(--white);
     position: absolute;
-    bottom: 5px;
-    left:0;
+    bottom: 9px;
+    left: 5px;
   }
 
   /* Footer */

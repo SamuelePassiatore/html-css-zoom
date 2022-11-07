@@ -116,8 +116,9 @@
 
   /* Footer */
 
-  .footer-left, .footer-right{
+  .footer-left {
     flex-basis: 20%;
+    padding-left: 10px;
   }
 
   .footer-center{
@@ -152,6 +153,8 @@
   }
 
   .footer-right{
+    flex-basis: 10%;
+    font-weight: bold;
     font-size: 12px;
     background-color: var(--grey);
     justify-content: center;

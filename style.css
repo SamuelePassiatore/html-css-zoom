@@ -4,7 +4,9 @@
     --grey: #4A4A4A;
     --dark-grey: #222222;
     --white: #fff;
-
+    --blue: #0210FF;
+    --red: #D12614;
+    --green: #4BC800;
   }
   
   /* Reset */
@@ -82,14 +84,34 @@
     width: 100%;
   }
 
-  .img-content{
-    background-color: var(--grey);
+  .img-content, .img-content-hover{
     font-size: 12px;
     padding: 2px;
     color: var(--white);
+  }
+
+  .img-content{
+    background-color: var(--grey);
     position: absolute;
     bottom: 9px;
     left: 5px;
+  }
+
+  .img-content-hover{
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    display: none;
+  }
+
+  .img-content-hover > span{
+    background-color: var(--blue);
+    padding: 3px 5px;
+    border-radius: 3px;
+  }
+
+  .card:hover .img-content-hover{
+    display: block;
   }
 
   /* Footer */
@@ -126,7 +148,7 @@
   }
 
   #share-green{
-    color: limegreen;
+    color: var(--green);
   }
 
   .footer-right{
@@ -134,6 +156,6 @@
     background-color: var(--grey);
     justify-content: center;
     align-items: center;
-    color: red;
+    color: var(--red);
     height: 80px;
   }

@@ -1,0 +1,21 @@
+  /* Custom properties */
+  :root{
+  }
+  
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Generics */
+  body {
+    font-family: sans-serif;
+  }
+  
+  /* Utils */
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }

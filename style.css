@@ -1,5 +1,9 @@
   /* Custom properties */
   :root{
+    --black: #000000;
+    --dark-grey: #222222;
+    --grey: #4A4A4A;
+
   }
   
   /* Reset */
@@ -16,6 +20,24 @@
   
   /* Utils */
   .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
   }
+
+  header{
+    background-color: var(--black);
+    height: 80px;
+  }
+
+  main{
+    background-color: red;
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+  }
+
+  footer{
+    background-color: green;
+    height: 80px;
+  }
+
+  /* Header */

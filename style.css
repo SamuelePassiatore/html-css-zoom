@@ -17,18 +17,18 @@
   /* Generics */
   body {
     font-family: sans-serif;
+    color: var(--white);
   }
   
   /* Utils */
   .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 
   header{
     background-color: var(--black);
     height: 80px;
-    color: white;
   }
 
   main{
@@ -38,8 +38,16 @@
   }
 
   footer{
-    background-color: green;
+    background-color: var(--dark-grey);
     height: 80px;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex{
+    display: flex;
   }
 
   /* Header */
@@ -65,12 +73,14 @@
   }
 
   .column{
-    flex-basis: calc(100% / 7);
+    flex-basis: calc(100% / 7 - 10px);
     min-height: 80px;
   }
 
   .card{
     position: relative;
+    flex-wrap: wrap;
+
   }
 
   .card > img{
@@ -85,4 +95,50 @@
     position: absolute;
     bottom: 5px;
     left:0;
+  }
+
+  /* Footer */
+
+  .footer-left, .footer-right{
+    flex-basis: 20%;
+  }
+
+  .footer-center{
+    flex-basis: 60%;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  footer i{
+    font-size: 20px;
+    padding: 8px;
+    margin: 0 5px;
+  }
+
+.fa-chevron-up{
+    font-size: 7px;
+    margin-left: 2px;
+  }
+
+  .name-actions{
+    padding-left: 8px;
+    font-size: 11px;
+  }
+
+  .center-text{
+    margin: 0 8px;
+    text-align: center;
+  }
+
+  #share-green{
+    color: limegreen;
+  }
+
+  .footer-right{
+    font-size: 12px;
+    background-color: var(--grey);
+    justify-content: center;
+    align-items: center;
+    color: red;
+    height: 80px;
   }

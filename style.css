@@ -2,6 +2,7 @@
   :root{
     --black: #000000;
     --grey: #4A4A4A;
+    --dark-grey: #222222;
 
   }
   
@@ -20,7 +21,7 @@
   /* Utils */
   .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
   header{
@@ -30,9 +31,9 @@
   }
 
   main{
-    background-color: red;
     height: calc(100vh - 160px);
     overflow-y: auto;
+    background-color: var(--black);
   }
 
   footer{
@@ -53,4 +54,20 @@
     padding: 3px;
     border-radius: 3px;
     margin-left: 2px;
+  }
+
+  /* Main */
+
+  .row{
+    display: flex;
+    gap: 10px;
+  }
+
+  .column{
+    flex-basis: calc(100% / 7);
+    min-height: 80px;
+  }
+
+  .card > img{
+    width: 100%;
   }

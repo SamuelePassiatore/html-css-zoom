@@ -3,6 +3,7 @@
     --black: #000000;
     --grey: #4A4A4A;
     --dark-grey: #222222;
+    --white: #fff;
 
   }
   
@@ -21,7 +22,7 @@
   /* Utils */
   .container {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto;
   }
 
   header{
@@ -68,6 +69,20 @@
     min-height: 80px;
   }
 
+  .card{
+    position: relative;
+  }
+
   .card > img{
     width: 100%;
+  }
+
+  .img-content{
+    background-color: var(--grey);
+    font-size: 12px;
+    padding: 2px;
+    color: var(--white);
+    position: absolute;
+    bottom: 5px;
+    left:0;
   }

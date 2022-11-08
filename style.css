@@ -29,7 +29,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-content: flex-start;
   }
 
   header{
@@ -91,7 +91,7 @@
   }
 
   .img-content{
-    background-color: var(--grey);
+    background-color: rgba(0,0,0,0.7);
     position: absolute;
     bottom: 9px;
     left: 5px;
